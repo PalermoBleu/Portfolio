@@ -78,6 +78,10 @@ nav {
 section { max-width: 1100px; margin: 0 auto; padding: 5.5rem 2rem; border-top: 1px solid var(--line); }
 .section-label { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); margin-bottom: 3rem; }
 .section-label::before { content: '— '; color: var(--ink); }
+.section-head { display: flex; align-items: center; flex-wrap: wrap; gap: 0.6rem 1rem; margin-bottom: 3rem; }
+.section-head .section-label { margin-bottom: 0; }
+.badge { font-size: 0.6rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink); border: 1px solid var(--ink); border-radius: 2px; padding: 0.3rem 0.55rem; line-height: 1; }
+.section-note { font-size: 0.75rem; color: var(--muted); }
 
 /* VIDEO GRID */
 .video-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
@@ -267,7 +271,11 @@ footer { border-top: 1px solid var(--line); padding: 1.8rem 2rem; text-align: ce
 
 <!-- DISEÑOS (imágenes verticales con lightbox) -->
 <section id="designs">
-  <p class="section-label reveal">Diseños</p>
+  <div class="section-head reveal">
+    <p class="section-label">Diseños</p>
+    <span class="badge">No AI</span>
+    <span class="section-note">100% hecho a mano en Photoshop</span>
+  </div>
   <div class="design-grid" id="designGrid">
 
     <!-- Card 1 — España Croacia -->
